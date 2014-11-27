@@ -3,18 +3,9 @@ var Browser = require('zombie'),
 
 var World = function World(callback) {
 
-    this.browser = new Browser({
-        runScripts: true,
-        debug: true
-    });
+    Browser.localhost('localhost', 3000);
+    this.browser = Browser.create();
 
-    this.page = function(path) {
-        return "http://localhost:3000" + path
-    };
-
-    this.visit = function(path, callback) {
-        this.browser.visit(this.page(path), callback);
-    };
     callback();
 };
 
