@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 
 app.use('/api', apiRouter);
 
-app.listen(3000, function () {
+var server = app.listen(3000, function () {
 
   app.host = this.address().address
   app.port = this.address().port
@@ -20,4 +20,4 @@ app.listen(3000, function () {
 
 });
 
-module.exports = app;
+module.exports = server;
