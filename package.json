@@ -2,7 +2,7 @@
   "name": "nodejs_testing_example",
   "version": "0.0.1",
   "description": "A simple testing example using supertest and mocha",
-  "author": "William Beene <bwr@tinycandyhammers.com>",
+  "author": "",
   "devDependencies": {
     "chai": "^1.9.2",
     "cucumber": "^0.4.4",
